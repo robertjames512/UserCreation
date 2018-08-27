@@ -22,7 +22,7 @@ public class SendEmail {
   
    public void send(String sender, String subject, StringBuffer content, TouroUser userBean) {
 
-      String host = "owa1.touro.edu";
+      String host = "some.smtp.serverName";
       Properties properties = System.getProperties();
       properties.setProperty("mail.smtp.host", host);
       Session session = Session.getDefaultInstance(properties);
